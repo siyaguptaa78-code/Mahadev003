@@ -2,33 +2,34 @@
 
 import React, { useState } from 'react';
 import Reveal from '../../components/UI/Reveal';
-import { Send, MessageCircle } from 'lucide-react';
+import { Mail, MessageSquare, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
 
 export default function ContactPage() {
-  const whatsappUrl = "https://wa.me/918872189471";
+  const whatsappUrl = "https://wa.me/919412834207";
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // In production, send data to API
     setStatus('Message sent successfully! Our WhatsApp team will get in touch.');
     setFormData({ name: '', email: '', message: '' });
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] py-16">
+    <div className="min-h-screen bg-black py-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <Reveal>
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-space-grotesk font-extrabold text-white uppercase mb-4">
-              Contact <span className="text-orange-500">Laser247</span>
+            <h1 className="text-4xl md:text-5xl font-serif font-black text-white mb-4">
+              Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-amber-500">Mahadev Book</span>
             </h1>
-            <p className="text-zinc-500 text-sm max-w-xl mx-auto font-light">
+            <p className="text-zinc-400 text-sm max-w-xl mx-auto font-light">
               Our support team is available 24/7. Reach us via WhatsApp or Telegram for the fastest response.
             </p>
-            <div className="w-12 h-1 bg-orange-500 mx-auto mt-4"></div>
+            <div className="w-16 h-0.5 bg-amber-500 mx-auto rounded-full mt-4"></div>
           </div>
         </Reveal>
 
@@ -37,46 +38,46 @@ export default function ContactPage() {
           {/* Support options details */}
           <Reveal xOffset={-45}>
             <div className="space-y-8">
-              <div className="minimal-card rounded p-6 border border-zinc-800 space-y-4">
-                <h3 className="text-white font-space-grotesk font-bold text-base uppercase">Instant Support Channels</h3>
+              <div className="glass-card rounded-2xl p-6 border border-zinc-850 space-y-4">
+                <h3 className="text-white font-serif font-bold text-lg">Instant Support Channels</h3>
                 
                 <div className="space-y-4 pt-2">
                   <a 
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 bg-zinc-900/40 border border-zinc-850 rounded hover:border-orange-500/20 transition-all duration-200 group"
+                    className="flex items-center gap-4 p-4 bg-zinc-900/40 border border-zinc-800 rounded-xl hover:border-amber-500/20 transition-all duration-300 group"
                   >
-                    <div className="w-10 h-10 rounded bg-[#25D366]/10 text-[#25D366] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                      <MessageCircle className="w-5 h-5 fill-current" />
+                    <div className="w-12 h-12 rounded-lg bg-[#25D366]/10 text-[#25D366] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                      <MessageCircle className="w-6 h-6 fill-current" />
                     </div>
                     <div>
-                      <h4 className="text-white font-bold text-xs uppercase tracking-wider">WhatsApp Chat</h4>
-                      <p className="text-zinc-550 text-[11px] mt-0.5 font-light">Fastest response – average response time under 1 minute.</p>
+                      <h4 className="text-white font-bold text-sm">WhatsApp Chat</h4>
+                      <p className="text-zinc-550 text-xs mt-0.5">Fastest response – average response time under 1 minute.</p>
                     </div>
                   </a>
 
                   <a 
-                    href="https://t.me/laser247"
+                    href="https://t.me/mahadevbook"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 bg-zinc-900/40 border border-zinc-850 rounded hover:border-orange-500/20 transition-all duration-200 group"
+                    className="flex items-center gap-4 p-4 bg-zinc-900/40 border border-zinc-800 rounded-xl hover:border-amber-500/20 transition-all duration-300 group"
                   >
-                    <div className="w-10 h-10 rounded bg-[#0088cc]/10 text-[#0088cc] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                      <Send className="w-5 h-5 fill-current" />
+                    <div className="w-12 h-12 rounded-lg bg-[#0088cc]/10 text-[#0088cc] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                      <Send className="w-6 h-6 fill-current" />
                     </div>
                     <div>
-                      <h4 className="text-white font-bold text-xs uppercase tracking-wider">Telegram Channel</h4>
-                      <p className="text-zinc-550 text-[11px] mt-0.5 font-light">Join our community channel for daily sports news and prediction updates.</p>
+                      <h4 className="text-white font-bold text-sm">Telegram Channel</h4>
+                      <p className="text-zinc-550 text-xs mt-0.5">Join our community channel for daily sports news and prediction updates.</p>
                     </div>
                   </a>
                 </div>
               </div>
 
               {/* Security info box */}
-              <div className="p-6 bg-zinc-950 rounded border border-zinc-900 space-y-2">
-                <h4 className="text-orange-500 font-bold text-xs uppercase tracking-wider">⚠️ Phishing Warning</h4>
-                <p className="text-zinc-550 text-[11px] font-light leading-relaxed">
+              <div className="p-6 bg-zinc-950 rounded-2xl border border-zinc-900 space-y-2">
+                <h4 className="text-amber-500 font-bold text-sm uppercase tracking-wider">⚠️ Phishing Warning</h4>
+                <p className="text-zinc-500 text-xs font-light leading-relaxed">
                   We will never ask you to send funds without confirming your registration details. Only communicate through the official WhatsApp number displayed on this domain.
                 </p>
               </div>
@@ -85,8 +86,8 @@ export default function ContactPage() {
 
           {/* Contact form */}
           <Reveal xOffset={45}>
-            <div className="minimal-card rounded p-8 border border-zinc-800">
-              <h3 className="text-white font-space-grotesk font-bold text-base uppercase mb-6">Drop Us a Message</h3>
+            <div className="glass-card rounded-2xl p-8 border border-amber-500/10">
+              <h3 className="text-white font-serif font-bold text-lg mb-6">Drop Us a Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
@@ -97,7 +98,7 @@ export default function ContactPage() {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-zinc-900/50 border border-zinc-850 rounded px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 text-xs font-light"
+                    className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500/50 text-sm font-light"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -109,7 +110,7 @@ export default function ContactPage() {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-zinc-900/50 border border-zinc-850 rounded px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 text-xs font-light"
+                    className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500/50 text-sm font-light"
                     placeholder="Enter your email address"
                   />
                 </div>
@@ -121,20 +122,20 @@ export default function ContactPage() {
                     rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full bg-zinc-900/50 border border-zinc-850 rounded px-4 py-3 text-white focus:outline-none focus:border-orange-500/50 text-xs font-light"
+                    className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500/50 text-sm font-light"
                     placeholder="Write your query here..."
                   />
                 </div>
 
                 <button 
                   type="submit"
-                  className="w-full py-3 bg-orange-600 hover:bg-orange-700 text-white font-extrabold rounded text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-2"
+                  className="w-full py-3.5 bg-gradient-to-r from-yellow-400 to-amber-500 text-black font-extrabold rounded-xl hover:brightness-110 transition-all duration-300 text-sm flex items-center justify-center gap-2"
                 >
-                  <Send className="w-3.5 h-3.5" /> Send Message
+                  <Send className="w-4 h-4" /> Send Message
                 </button>
 
                 {status && (
-                  <p className="text-green-500 text-xs font-semibold text-center mt-4 uppercase tracking-wider">
+                  <p className="text-[#25D366] text-xs font-semibold text-center mt-4">
                     {status}
                   </p>
                 )}

@@ -2,14 +2,14 @@ import { MetadataRoute } from 'next';
 import { blogPosts } from '../lib/blogData';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://thelaser247.info';
+  const baseUrl = 'https://themahadevbook.info';
 
   const routes = [
     '',
     '/about',
     '/blog',
-    '/laser247-app',
-    '/laser247-id',
+    '/mahadev-betting-app',
+    '/mahadev-book-id',
     '/faq',
     '/contact',
   ].map((route) => ({
