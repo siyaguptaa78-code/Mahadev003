@@ -98,13 +98,9 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-          <p className="text-zinc-500 text-center md:text-left">
-            &copy; {currentYear} Mahadev Book. All rights reserved.
-          </p>
-          <p className="text-zinc-600 max-w-xl text-center md:text-right font-light">
-            Mahadev Book is an educational sports insights platform. All content is for informational purposes only. Play responsibly and at your own risk.
+        <div className="mt-12 pt-8 border-t border-zinc-900 flex flex-col justify-center items-center gap-4 text-xs">
+          <p className="text-zinc-500 text-center">
+            &copy; 2026 Mahadev Book. All rights reserved.
           </p>
         </div>
       </div>

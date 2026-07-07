@@ -15,18 +15,18 @@ const stats = [
 ];
 
 const games = [
-  { title: "Cricket Betting", desc: "Live IPL, International matches, T20 leagues with competitive odds and real-time markets.", icon: "🏏" },
-  { title: "Football Leagues", desc: "Bet on Premier League, Champions League, La Liga, and Indian Super League events.", icon: "⚽" },
-  { title: "Live Casino", desc: "Enjoy live dealer streams of Teen Patti, Andar Bahar, Roulette, and Poker from home.", icon: "🃏" },
-  { title: "Tennis Matches", desc: "Place real-time bets on Grand Slams, ATP tour, and WTA tour tournaments.", icon: "🎾" },
-  { title: "Virtual Sports", desc: "Fast-paced digital cricket, football and racing simulations available 24 hours a day.", icon: "🎮" }
+  { title: "Cricket Betting", desc: "Live IPL, international matches, T20 leagues", icon: "🏏" },
+  { title: "Football Leagues", desc: "Premier league, Champions league, ISL, La Liga", icon: "⚽" },
+  { title: "Live Casino", desc: "Teen Patti, Andar Bahar, Roulette, Poker live stream", icon: "🃏" },
+  { title: "Tennis Matches", desc: "Grand slam, ATP, WTA, tennis betting", icon: "🎾" },
+  { title: "Virtual Sports", desc: "Digital Cricket, Football, and races available 24/7", icon: "🎮" }
 ];
 
 const features = [
-  { title: "Secure Payments", desc: "UPI, GPay, Paytm, PhonePe, and local bank transfers with 256-bit encryption.", icon: Shield },
-  { title: "Fast Payouts", desc: "Direct bank transfer withdrawals processed in 5-10 minutes flat.", icon: Zap },
-  { title: "Data Insights", desc: "Free prediction models, player stats, and historical head-to-head analysis.", icon: TrendingUp },
-  { title: "24/7 WhatsApp help", desc: "Dedicated personal relationship managers to assist you instantly.", icon: Headphones }
+  { title: "Secure Payments", desc: "UPI, GPay, Paytm, PhonePe & local bank transfer (256-bit encryption)", icon: Shield },
+  { title: "Fast Payouts", desc: "Direct Bank transfer withdrawals within 5-10 mins", icon: Zap },
+  { title: "Data Insights", desc: "Free prediction, player stats, and head-to-head analysis", icon: TrendingUp },
+  { title: "24/7 WhatsApp support", desc: "Personal relationship managers to assist you", icon: Headphones }
 ];
 
 const reviews = [
@@ -81,12 +81,12 @@ const faqs = [
 ];
 
 const tickerItems = [
-  "🏆 USER_9921 WON ₹45,000 on CSK vs MI!",
-  "🔥 USER_8832 WON ₹1,20,000 on Teen Patti!",
-  "⚡ USER_4411 WITHDREW ₹75,000 in 4 mins!",
-  "🎯 USER_5782 WON ₹88,000 on IND vs AUS!",
-  "🏆 USER_3294 WON ₹35,000 on Roulette!",
-  "🔥 USER_1120 WON ₹2,50,000 on IPL Outright!"
+  "🏆 USER_9921 WON ₹45,000 on CSK vs MI",
+  "🔥 USER_8832 WON ₹1,20,000 on Teen Patti",
+  "⚡ USER_4411 WITHDREW ₹75,000 in 4 mins",
+  "🎯 USER_5782 WON ₹88,000 on IND vs AUS",
+  "🏆 USER_3294 WON ₹35,000 on Roulette",
+  "🔥 USER_1120 WON ₹2,50,000 on IPL Outright"
 ];
 
 export default function Home() {
@@ -111,7 +111,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl font-medium text-zinc-400 border-l-4 border-emerald-500 pl-4">
-              Welcome to Mahadev Book, the online betting game-changer of all time. Betting isn't just about chance; it's about timing, strategy, and choosing the right platform.
+              Welcome to Mahadev Book, the online betting game-changer of all time. Betting requires timing, strategy, and a reliable place to bet.
             </p>
 
             <div className="flex gap-4">
@@ -163,7 +163,7 @@ export default function Home() {
                 What is <br/><span className="text-emerald-500">Mahadev Book?</span>
               </h2>
               <p className="text-lg text-zinc-400 font-medium">
-                We bridge the gap between players and premier sportsbooks with fair play and complete safety.
+                We connect players to premier sportsbooks with fair play and safety.
               </p>
             </div>
             
