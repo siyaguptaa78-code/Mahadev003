@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const blogRoutes = blogPosts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
+    url: post.customPath ? `${baseUrl}${post.customPath}` : `${baseUrl}/blog/${post.slug}`,
     lastModified: now,
     changeFrequency: 'weekly' as const,
     priority: 0.6,

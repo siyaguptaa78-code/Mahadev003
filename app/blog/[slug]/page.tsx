@@ -12,7 +12,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const resolvedParams = await params;
   const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
-  if (!post) {
+  if (!post || post.customPath) {
     return { title: "Post Not Found | Mahadev Book" };
   }
   return {
@@ -35,9 +35,11 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
-    slug: post.slug,
-  }));
+  return blogPosts
+    .filter((post) => !post.customPath)
+    .map((post) => ({
+      slug: post.slug,
+    }));
 }
 
 interface PageProps {
@@ -48,7 +50,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   const resolvedParams = await params;
   const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
 
-  if (!post) {
+  if (!post || post.customPath) {
     notFound();
   }
 

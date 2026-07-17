@@ -7,9 +7,21 @@ export interface BlogPost {
   icon: string;
   content: string;
   readTime: string;
+  customPath?: string;
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "ballon-dor-winners",
+    title: "Ballon d'Or: Winners, Records & the 2026 Race",
+    excerpt: "Who won the Ballon d'Or 2025, who has the most wins, and everything about the 2026 ceremony in London on 26 October. Recent winners list and records in one place.",
+    date: "July 14, 2026",
+    category: "Football",
+    icon: "⚽",
+    readTime: "6 min read",
+    customPath: "/ballon-dor-winners/",
+    content: "Content is custom-rendered on the page."
+  },
   {
     slug: "benefits-of-verified-id-2025",
     title: "Benefits of Having a Verified Laser247 ID in 2025",
